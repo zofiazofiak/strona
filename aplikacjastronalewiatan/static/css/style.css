@@ -1,0 +1,83 @@
+{% load static %}
+body {
+
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+.container {
+            width: 80%;
+            margin: 60px;
+            overflow: hidden;
+            color:antiquewhite;
+    font-family: "Segoe UI Variable";
+        }
+header {
+            background-image: url('/static/images/3.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #000000 3px solid;
+        }
+span{
+    position:relative;
+    top: 0px;
+    color:white;
+    font-family: "Segoe UI Variable";
+
+}
+
+header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 19px;
+            font-family:"Segoe UI Variable";
+        }
+header ul {
+            padding: 0;
+            list-style: none;
+
+        }
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+li a {
+    display: inline-block;
+    padding: 10px 15px; /* Dodaje wewnętrzne marginesy dla przycisku */
+    margin: 5px; /* Dodaje zewnętrzne marginesy */
+    background-color: #ffffff; /* Kolor tła przycisku */
+    color: #1a164f; /* Kolor tekstu */
+    text-decoration: none; /* Usuwa podkreślenie tekstu */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    transition: background-color 0.3s; /* Animacja zmiany koloru tła */
+}
+
+li a:hover {
+    background-color: #000000; /* Zmienia kolor tła podczas najechania */
+}
+
+.current a {
+    background-color: #ffffff; /* Kolor tła dla aktywnego przycisku */
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+
+header .highlight, header .current a {
+            color: #ffd76c;
+            font-weight: bold;
+        }
+header a:hover {
+    color: #312727;
+    font-weight: bold;
+}

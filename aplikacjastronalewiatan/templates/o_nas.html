@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona Główna</title>
+    <!-- Link do zewnętrznego arkusza CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/4.png' %}"
+             alt="Logo Piekarnia Klapuch"
+             width="300"
+             height="300"
+             style="float:right">
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Piekarnia</span> Klapuch</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="{% url 'home' %}">Strona Główna</a></li>
+                    <li><a href="{% url 'o_nas' %}">O Nas</a></li>
+                    <li><a href="{% url 'usługi' %}">Usługi</a></li>
+                    <li><a href="{% url 'kontakt' %}">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="showcase">
+        </section>
+    </div>
+    <img src="{% static 'images/5.jpg' %}">
+
+    <footer>
+        <p>Moja Strona Django &copy; 2023</p>
+    </footer>
+</body>
+</html>
